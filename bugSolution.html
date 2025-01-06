@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Correct way to get just the text content
+    let text = document.getElementById("myDiv").textContent;
+    console.log(text); // This will log only "This is some text."
+  </script>
+</body>
+</html>
