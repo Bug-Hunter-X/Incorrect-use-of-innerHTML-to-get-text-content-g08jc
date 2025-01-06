@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrect attempt to get the text content of a div using innerHTML
+    let text = document.getElementById("myDiv").innerHTML;
+    console.log(text); //This will log the entire HTML content of the div, including the <p> tag
+
+    //Correct way to get just the text content
+    let correctText = document.getElementById("myDiv").textContent;
+    console.log(correctText); // This will log only "This is some text."
+  </script>
+</body>
+</html>
